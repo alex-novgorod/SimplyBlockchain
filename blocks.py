@@ -4,10 +4,7 @@ import os
 
 def writeblock(who, amount, to_whom, prev_hash=''):
     blockchain_dir = os.curdir + '/SimplyBlockchain/blocks/'
-    #files = os.listdir(blockchain_dir)
     file = str(sorted([int(i) for i in os.listdir(blockchain_dir)])[-1]+1)
-    #print(file)
-    #print(type(file))
     data = {'who': who,
             'amount': amount,
             'to_whom': to_whom,
