@@ -3,7 +3,7 @@ import json
 import os
 
 def writeblock(who, amount, to_whom, prev_hash=''):
-    blockchain_dir = os.curdir + '/SimplyBlockchain/blocks/'
+    blockchain_dir = os.curdir + '/SimplyBlockchain/SimplyBlockchain/blocks/'
     file = str(sorted([int(i) for i in os.listdir(blockchain_dir)])[-1]+1)
     data = {'who': who,
             'amount': amount,
