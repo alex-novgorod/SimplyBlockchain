@@ -20,7 +20,7 @@ def writeblock(who, amount, to_whom, prev_hash=''):
         json.dump(data, file, indent=4, ensure_ascii=False)
 
 def main():
-    writeblock(who='ivan', amount=10, to_whom='fedor', prev_hash='123')
+    writeblock(who='fedor', amount=5, to_whom='kseniya', prev_hash='')
 
 if __name__ == '__main__':
     main()
